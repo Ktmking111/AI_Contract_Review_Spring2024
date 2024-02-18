@@ -3,11 +3,10 @@ import tkinter
 from tkinter import filedialog
 from contract_to_txt import convert_to_txt, txt_to_docx
 from flag_problem_language import _flag_problem_language
-from docx import Document
-import nltk
+from nltk import data as nltk
 
 # Append the custom path to the NLTK data path
-nltk.data.path.append("supplementary_files\\nltk_data")
+nltk.path.append("supplementary_files\\nltk_data")
 
 tkinter.Tk().withdraw()
 # Opens file browser to select Excel spreadsheet containing FAR Clauses
@@ -16,7 +15,7 @@ FAR_clause_matrix = "supplementary_files\\2023-03-20_FAR Matrix.xls"
 
 # Opens file browser to select Excel spreadsheet containing FAR Clauses
 print("Loading AU T&Cs Matrix")
-tnc_matrix = "supplementary_files\Contract Ts&Cs Matrix.xlsm"
+tnc_matrix = "supplementary_files\\Contract Ts&Cs Matrix.xlsm"
 
 # Opens file browser to select document you wish to parse and annotate according to selected spreadsheet
 print("Select contract you wish to annotate")

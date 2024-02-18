@@ -1,6 +1,5 @@
 import pandas as pd
 import re
-import docx
 from docx import Document
 from docx.enum.text import WD_COLOR_INDEX
 
@@ -37,7 +36,7 @@ def read_far_matrix(excel_path):
 
 # Function to read text from a .docx file
 def read_docx(file_path):
-    doc = docx.Document(file_path)
+    doc = Document(file_path)
     full_text = []
     for para in doc.paragraphs:
         full_text.append(para.text)
