@@ -4,6 +4,10 @@ from tkinter import filedialog
 from contract_to_txt import convert_to_txt, txt_to_docx
 from flag_problem_language import _flag_problem_language
 from docx import Document
+import nltk
+
+# Append the custom path to the NLTK data path
+nltk.data.path.append("supplementary_files\\nltk_data")
 
 tkinter.Tk().withdraw()
 # Opens file browser to select Excel spreadsheet containing FAR Clauses
