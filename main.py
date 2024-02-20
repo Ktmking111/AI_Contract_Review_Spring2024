@@ -6,8 +6,20 @@ from flag_FAR_clauses import annotate_contract
 
 FAR_CLAUSE_MATRIX_PATH = ""
 
+def apply_styles():
+    ui.add_head_html('''
+                    <style>
+                        .q-uploader {
+                            width: 100%;
+                            margin: auto;
+                            max-width: 1000px;
+                        }
+                    </style>
+                    ''')
+
 @ui.page("/")
 def index():
+    apply_styles()
     ui.upload(multiple=True, label="Upload Contracts", auto_upload=True, on_upload=handle_upload).props(add="accept='.docx,.pdf'")
 
 
@@ -15,7 +27,7 @@ def handle_upload(e):
     name = e.name
     binary = e.content.read()
     write_binary_to_temp_file(name, binary)
-    
+
 
 def write_binary_to_temp_file(name, binary):
     with open(file=f"temp/{name}", mode="wb") as file:
