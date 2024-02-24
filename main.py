@@ -11,8 +11,8 @@ TNC_MATRIX_PATH = "supplementary_files\\Contract Ts&Cs Matrix.xlsm"
 
 @ui.page("/")
 def index():
-    # link to stylesheet
     ui.add_head_html("<link rel='stylesheet' href='/static/style.css'/>")
+    ui.page_title('AI Contract Scanner')
 
     ui.upload(multiple=True, label="Upload Contracts", auto_upload=True, on_upload=handle_upload).props(add="accept='.docx,.pdf'")
 
