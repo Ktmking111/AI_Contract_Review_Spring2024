@@ -5,6 +5,10 @@ from contract_to_txt import convert_to_txt
 from flag_FAR_clauses import annotate_contract
 from contract_to_txt import convert_to_txt, txt_to_docx
 from flag_problem_language import _flag_problem_language
+from nltk import data as nltk
+
+# Append the custom path to the NLTK data path
+nltk.path.append("supplementary_files\\nltk_data")
 
 FAR_CLAUSE_MATRIX_PATH = "supplementary_files\\2023-03-20_FAR Matrix.xls"
 TNC_MATRIX_PATH = "supplementary_files\\Contract Ts&Cs Matrix.xlsm"
@@ -63,4 +67,4 @@ if __name__ == "__main__":
 if __name__ in {"__main__", "__mp_main__"}:
     app.add_static_files("/static", "static")
     app.add_static_files("/temp", "temp")
-    ui.run()
+    ui.run(native=False, reload=False)
