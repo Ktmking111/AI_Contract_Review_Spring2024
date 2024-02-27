@@ -22,6 +22,7 @@ def index():
 
 
 async def handle_upload(e):
+    clear_temp_files()
     name = e.name
     binary = e.content.read()
     upload_filepath = write_binary_to_temp_file(name, binary)
