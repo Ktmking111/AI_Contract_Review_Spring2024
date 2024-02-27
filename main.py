@@ -61,10 +61,10 @@ def clear_temp_files():
     for f in files:
         os.remove(f)
 
-if __name__ == "__main__":
-    clear_temp_files()
+#if __name__ == "__main__":
+    #clear_temp_files()
 
 if __name__ in {"__main__", "__mp_main__"}:
     app.add_static_files("/static", "static")
     app.add_static_files("/temp", "temp")
-    ui.run(native=False, reload=False)
+    ui.run(native=True, reload=False)
