@@ -147,11 +147,11 @@ def _flag_problem_language(tnc_path_in):
         for key in flagged_sentences:
             if key.strip() == tokenized_line.strip():
                 matched = True
-                modded_lines.append("\t\t[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]")
+                modded_lines.append("\t\t*******************************************************************************************\n[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]")
                 modded_lines.append(tokenized_line)
                 for k, v in flagged_sentences[key].items():
                     modded_lines.append(f"\t\t{k}: {v}")
-                modded_lines.append("\t\t[END POTENTIAL PROBLEMATIC LANGUAGE]")
+                modded_lines.append("\t\t[END POTENTIAL PROBLEMATIC LANGUAGE]\n*******************************************************************************************")
                 break
         if not matched:
             modded_lines.append(tokenized_line)

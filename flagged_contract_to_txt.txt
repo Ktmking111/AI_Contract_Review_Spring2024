@@ -1,4 +1,5 @@
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 MIT Subaward Agreement no.
 		Problem Category: Confidential Information
 		Common Problems: the terms of the agreement are also confidential
@@ -7,6 +8,7 @@ MIT Subaward Agreement no.
 		1st response to Sponsor: None
 		Confidence: 0.20199309249791833
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 S###
 MIT Purchase Order no.
 #####
@@ -68,7 +70,8 @@ Reports shall be submitted to MIT as follows:
 White Paper between 20 and 30 Pages in length associated with topic of election practice as described in the Statement of Work.
 A final technical report shall be submitted to the MIT Principal Investigator by December 31, 2023.
 Other reports as may be reasonably requested by MIT.
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 TERMINATION.
 		Problem Category: Termination
 		Common Problems: they want a hard stop date for reimbursements if there is an early termination
@@ -77,9 +80,11 @@ TERMINATION.
 		1st response to Sponsor: get the language "non-cancelable commitments" added
 		Confidence: 0.2789425453258252
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 Performance under this Subaward may be terminated by MIT or Subawardee upon thirty (30) days’ prior written notice to MIT’s or Subawardee’s Business Contact noted in Article 15.
 Performance under this Subaward may be terminated immediately upon notice to the Subawardee, if the Prime Award is terminated by the Prime Sponsor.
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 Further:
 Either Party may terminate this Subaward Agreement upon the other Party’s non-compliance with any obligation under this Subaward Agreement and failure to cure within thirty (30) days after receipt of written notice from the non-breaching Party.
 		Problem Category: PI Signature
@@ -89,10 +94,12 @@ Either Party may terminate this Subaward Agreement upon the other Party’s non-
 		1st response to Sponsor: change it to acknowledges.  They can sign as read & acknowledged if needed. Any language in the agreement requiring the PI to agree in writing should be edited to specify that the PI will agree or have agreed to follow the terms (not in writing) 
 		Confidence: 0.21928864177327465
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 Such events of non-compliance/breach may include, but are not limited to those described in Article 26 of the  Prime Award.
 Upon termination of this Subaward Agreement for any reason, without waiver of either Party’s other rights and remedies, (i) Subawardee will cease work under this Subaward Agreement as of the effective date of termination and shall not incur any additional costs or perform any additional work under this Subaward Agreement without MIT’s prior written consent; (ii) a financial report shall be due to MIT within sixty (60) days of the effective date of the termination; (iii) Subawardee shall provide MIT with any Work Product created (and Datasets if applicable) prior to termination, including drafts; and (iv) MIT shall reimburse Subawardee for its costs and noncancelable commitments (unless such amounts for noncancelable commitments were incurred in connection with Subawardee’s breaches of this Subaward Agreement incurred in performance of the Purpose up to and including the effective date of termination, the total of which in no event shall exceed the total amount of the Authorized Total.
 Notwithstanding any of the foregoing, either party shall have the right to invoke force majeure and terminate this Subaward in the event that proceeding with the Subawardee Research or material portions thereof would be inconsistent with applicable national, state, or local health advisories and restrictions or University-level policies regarding business travel or attendance at large group gatherings, due to the global public health emergency caused by the novel coronavirus (COVID-19).
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 CONFIDENTIAL INFORMATION.
 		Problem Category: Use of Name
 		Common Problems: Acceptance of this Grant shall be deemed consent of the Grantee Institution to the publication of information, including the title of the project, the name and institutional affiliation of the Principal Investigator, the amount of the award and the non-technical project summary.  The non-technical summary shall not contain confidential information.
@@ -101,9 +108,11 @@ CONFIDENTIAL INFORMATION.
 		1st response to Sponsor: change "including" to "consisting of" and delete the other portion.  Also add the above
 		Confidence: 0.24637114872417742
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 Parties do not expect to exchange confidential or proprietary information under this Subaward.
 Should it become necessary for MIT and Subawardee to exchange such information, the Parties will enter into a separate agreement covering the exchange of such information including the terms and conditions of such exchange.
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 Should the Subawardee require information of the Prime Sponsor which the Prime Sponsor considers to be confidential or proprietary, the Subawardee and Prime Sponsor shall enter into an agreement with regards to such information.
 		Problem Category: Export Controls
 		Common Problems: Sponsor will or may provide export controlled information
@@ -112,6 +121,7 @@ Should the Subawardee require information of the Prime Sponsor which the Prime S
 		1st response to Sponsor: add the following statement: "Therefore, in the event that SPONSOR wishes to provide export controlled data or information to Auburn during the course of activity under this Agreement, SPONSOR must first notify Auburn of its intention to provide this data at least thirty (30) days in advance of actually providing this data or information and provide the Export Control classification of such data under the ITAR or EAR. Auburn will then determine whether Auburn can accept such data, as well as the conditions for such receipt if agreed upon. Auburn will then communicate this determination back to SPONSOR within seven (7) days of such determination.” 
 		Confidence: 0.2406116450499985
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 For the avoidance of doubt, MIT will not be providing Prime Sponsor confidential information to Subawardee under this Subaward.
 PUBLICATIONS, ACKNOWLEDGEMENT & DISCLAIMER.
 The Parties acknowledge that they are each free to publish the results of the research conducted and Work Product (hereinafter defined in Article 12.1) generated under this Subaward Agreement, including but not limited to, through academic journals, conferences or websites.
@@ -129,7 +139,8 @@ Notwithstanding the foregoing, the above license may be sublicensed by the Prime
 Disclosure of Unpublished Work Product: The Parties agree (i) to use commercially reasonable efforts to protect each other’s unpublished Work Product from unauthorized use or disclosure and to use at least the same degree of care with regard thereto as it uses to protect its own confidential information of a like nature; and (ii) not to disclose or otherwise permit access to the aforementioned unpublished Work Product to any third party, without each other’s prior written consent.
 Third Party Infringement.
 Subawardee agrees that it will make reasonable efforts to ensure that all faculty, staff and researchers of Subawardee (collectively, the “Subawardee Parties”) are required to abide by the Subawardee’s policies and procedures prohibiting unethical behavior and research misconduct (as further defined in Subawardee’s Policies and Procedures) in the performance of their research activities.
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 Subawardee Parties who use software owned or made available by a third party to conduct research activities under this Subaward Agreement shall obtain the appropriate permission or license (if required) and abide by the terms of the applicable software agreement(s) (if any), and any applicable terms of use.
 		Problem Category: Confidential Information
 		Common Problems: the terms of the agreement are also confidential
@@ -138,6 +149,7 @@ Subawardee Parties who use software owned or made available by a third party to 
 		1st response to Sponsor: None
 		Confidence: 0.2521387069452626
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 MIT may terminate this Agreement pursuant to Article 9 of this Subaward Agreement if violation of any third parties’ intellectual property rights results from Subawardee Parties’ conduct of their activities hereunder.
 If Subawardee or Subawardee Parties receive notice of any third-party infringement claim against Subawardee in connection with the performance of this Subaward Agreement or any Work Product hereunder, Subawardee shall promptly notify MIT of such notice in writing and take reasonable steps to resolve the dispute.
 Jointly Developed Copyright Materials.
@@ -154,7 +166,8 @@ Subawardee shall grant to MIT the right to use Research Results created in the p
 USE OF NAMES.
 Neither Party shall use the name (including abbreviations or variants), mark or logo of the other Party in any public announcement, advertisement, press release, marketing and promotional materials, or other public disclosure (except to the extent required by applicable law or regulation) without the prior written consent of the other Party (in the case of MIT, MIT’s Institute Office of Communications).
 Notwithstanding the foregoing, (i) without the consent of MIT, Subawardee may make factual statements during the term of this Agreement that Subawardee is conducting research sponsored by MIT; however, any such statement may not be expressed in a manner that creates the appearance of an endorsement or promotion of Subawardee by MIT or be made in any marketing or advertising, and MIT has the right to require removal of any such statements; and (ii) without the consent of Subawardee, MIT may publicly acknowledge and disclose its support for the research activities being conducted under this Subaward Agreement, including, for example, the investigator’s name, research area and funding amount.
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 LIMITATION OF LIABILITY.
 		Problem Category: Insurance
 		Common Problems: Professional Liability / Errors & Omissions
@@ -163,8 +176,10 @@ LIMITATION OF LIABILITY.
 		1st response to Sponsor: Risk Management
 		Confidence: 0.22028815056182974
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 EACH PARTY SHALL BE RESPONSIBLE FOR ITS NEGLIGENT ACTS OR OMISSIONS AND THE NEGLIGENT ACTS OR OMISSIONS OF ITS EMPLOYEES, OFFICERS, OR DIRECTORS, TO THE EXTENT ALLOWED BY LAW.
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 IN NO EVENT SHALL EITHER PARTY, ITS TRUSTEES, DIRECTORS, OFFICERS, EMPLOYEES, STUDENTS, AND AFFILIATES, BE LIABLE FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES OF ANY KIND, INCLUDING LOST PROFITS, REGARDLESS OF WHETHER THE PARTY WAS ADVISED, HAD OTHER REASON TO KNOW OR IN FACT KNEW OF THE POSSIBILITY OF THE FOREGOING.
 		Problem Category: Limitation of Liability
 		Common Problems: IN NO EVENT SHALL COMPANY BE LIABLE TO AUBURN OR TO ANY OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOST PROFITS OR LOSS OF BUSINESS, HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE SERVICES, WHETHER BASED IN CONTRACT, TORT (INCLUDING NEGLIGENCE) OR OTHER THEORY OF LIABILITY, REGARDLESS OF WHETHER COMPANY WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND NOTWITHSTANDING THE FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY. IN NO EVENT SHALL COMPANY’S LIABILITY ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT EXCEED THE AMOUNTS PAID 
@@ -175,6 +190,7 @@ IN NO EVENT SHALL EITHER PARTY, ITS TRUSTEES, DIRECTORS, OFFICERS, EMPLOYEES, ST
 
 		Confidence: 0.24708240924683317
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 THIS ARTICLE 14 SHALL SURVIVE THE EXPIRATION OR ANY EARLIER TERMINATION OF THE SUBAWARD
 NOTICES.
 Any notices required to be given or which shall be given under this Subaward shall be in writing and be addressed to the Parties as shown below.
@@ -210,7 +226,8 @@ DISCLAIMERS OF WARRANTIES.
 Neither Party makes any representations or warranties of any kind concerning the Subawardee Research or the MIT Copyrightable Materials, Subawardee Copyrightable Materials or any intellectual property rights therein.
 Each party hereby disclaims all representations and warranties, express or implied, including, without limitation, warranties of merchantability, fitness for a particular purpose, or non-infringement of such intellectual property rights of Subawardee or MIT, or of any third parties, including theMIT Copyrightable Materials and Subawardee Copyrightable Materials, or the intellectual property rights related to the Copyrightable Materials, as well as the absence of latent or other defects, whether or not discoverable.
 This Article 16 shall survive the expiration or any earlier termination of this Subaward.
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 INDEMNIFICATION.
 		Problem Category: Limitation of Liability
 		Common Problems: HOLD HARMLESS / INDEMN / INDEMNIFY / INDEMNIFICATION / DEFEND / ATTORNEY FEES
@@ -219,7 +236,9 @@ INDEMNIFICATION.
 		1st response to Sponsor: Auburn’s position on the matter is that we are constitutionally prohibited from agreeing to indemnify, defend, or hold harmless another party, and we will not enter into any agreement which requires us to do so, whether by specific terms or through indicia.   
 		Confidence: 0.2596979932401625
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+*******************************************************************************************
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 Each Party hereto shall indemnify, defend and hold harmless the other Party and its officers, directors, employees, and agents, from and against any and all third party claims, liabilities, damages, losses, expenses, demands, suits, and judgments, including without limitation reasonable attorneys’ fees and costs (the “Claims”), caused by the negligence or willful misconduct of indemnifying Party or its contractors or employees in the performance of the Purpose under this Subaward Agreement, except to the extent that such Claims are caused by the negligence or willful misconduct of the other Party or its contractors or employees.
 		Problem Category: Penalties
 		Common Problems: •To the fullest extent permitted by law, and not withstanding any other provision of this Agreement, the total liability of Auburn, Auburn's officers, directors, partners, employees and subcontracts  and anyone claiming by or through the Sponsor for all claims, losses, costs or damages, including attorneys’ fees and costs of any nature whatsoever or claims expenses resulting from or in any way related to the Project or the Agreement from any cause or causes. 
@@ -228,11 +247,13 @@ Each Party hereto shall indemnify, defend and hold harmless the other Party and 
 		1st response to Sponsor: Strike
 		Confidence: 0.21768245899525196
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 Each party hereby assumes any and all risks of personal injury and property damage attributable to the negligent acts and omissions of that party and the officers, employees, and agents thereof.
 Neither party shall be responsible for the personal injury and property damage attributable to the negligent acts and omissions of the other party and the officers, employees, and agents thereof.
 ASSIGNMENT.
 This Subaward shall be binding upon and inure to the benefit of the Parties hereto and the successors to substantially the entire business and assets of the respective parties hereto.
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 This Subaward shall not be assignable by Subawardee without the prior written consent of MIT; any attempted assignment is void.
 		Problem Category: Assignment
 		Common Problems: UNIVERSITY shall not be entitled to assign or otherwise transfer its rights and/or obligations under this Agreement in whole or in part to any third party without the prior written consent of SPONSOR.
@@ -241,7 +262,9 @@ This Subaward shall not be assignable by Subawardee without the prior written co
 		1st response to Sponsor: have it struck
 		Confidence: 0.20300559411092822
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+*******************************************************************************************
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 GOVERNING LAW.
 		Problem Category: Govering Law
 		Common Problems: other states/countries for law
@@ -250,6 +273,7 @@ GOVERNING LAW.
 		1st response to Sponsor: Revise the agreement to the preferred language
 		Confidence: 0.2605556710562624
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 The validity and interpretation of this Subaward and the legal relationship of the Parties to it shall be governed by the laws of the Commonwealth of Massachusetts and the applicable U.S. Federal law, without regard to any applicable conflict of law principles.
 DISPUTE RESOLUTION.
 In the event of any dispute arising under this Subaward, written notice of the dispute must be provided to the other Party within thirty (30) days of the events giving rise to the dispute.
@@ -271,7 +295,8 @@ In addition to the terms and conditions explicitly detailed in this Subaward Agr
 In reading the Prime Award flowdown terms, “Grantee” shall be read as “Subawardee” and “Grantor” shall be read as MIT.
 The following Prime Award Articles shall not apply to Subawardee: Articles: 1, 3, 4, 6, 10 & 11, 27.
 Reports, disclosures, and communications under these terms: Notwithstanding the above, Subawardee shall deliver any reports or other communications, make any disclosures, otherwise deliver any tangible or intangible property and seek any authorizations that are required by this Article 22 to MIT except when the plain text of the Prime Award, if interpreted without regard to the remainder of this Subaward, would expressly permit or require Subawardee to make such conveyance directly to the Prime Sponsor or to Funder.
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 Prior approval for activity: Subawardee will obtain prior approval from MIT before undertaking any activity for which Prime Sponsor requires prior approval from MIT.
 		Problem Category: Publications
 		Common Problems: prior approval over the substantive content of information, data and/or results in publications or presentations, 
@@ -282,7 +307,9 @@ Publication restrictions eliminate the fundamental research exemption from expor
 		1st response to Sponsor: remove any prior approval language
 		Confidence: 0.22320554374074794
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+*******************************************************************************************
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 EQUIPMENT.
 		Problem Category: Equipment
 		Common Problems: *This would not apply to federal equipment as addressed in 2CFR 200 (see FAR for contracts)
@@ -291,8 +318,10 @@ EQUIPMENT.
 		1st response to Sponsor: None
 		Confidence: 0.2596979932401625
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 For purposes of this Subaward, equipment is defined as non-expendable, tangible personal property having a useful life of more than one year and an acquisition cost that equals or exceeds the lesser of the capitalization level established by the Subawardee for financial statement purposes or $5,000.
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 No equipment is authorized to be purchased under this Subaward.
 		Problem Category: Equipment
 		Common Problems: sponsor retains ownership of equipment provided or purchased
@@ -301,10 +330,12 @@ No equipment is authorized to be purchased under this Subaward.
 		1st response to Sponsor: ask to have it vest with Auburn
 		Confidence: 0.26055567105626243
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 INDEPENDENT CONTRACTOR.
 In the performance of this Subaward, Subawardee shall be deemed to be an independent contractor and, as such, no employees or staff of Subawardee shall be entitled to any benefits applicable to employees of MIT.
 The Parties are each free to pursue relationships and opportunities with others similar to those contemplated in this Subaward.
-		[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
+		*******************************************************************************************
+[POTENTIAL PROBLEMATIC LANGUAGE DETECTED]
 PRIOR APPROVAL.
 		Problem Category: Publications
 		Common Problems: prior approval over the substantive content of information, data and/or results in publications or presentations, 
@@ -315,6 +346,7 @@ Publication restrictions eliminate the fundamental research exemption from expor
 		1st response to Sponsor: remove any prior approval language
 		Confidence: 0.3554767779546839
 		[END POTENTIAL PROBLEMATIC LANGUAGE]
+*******************************************************************************************
 Subawardee must acquire prior approval on any of the following changes:
 Substantive changes in Subawardee’s Statement of Work or Budget;
 Absence and/or change in Subawardee Principal Investigator;
