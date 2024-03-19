@@ -20,6 +20,8 @@ def annotate_contract(xls_in, contract_in, save_path):
     # Create New Annotated Document
     new_doc = Document()
     original_doc = Document(contract_in)
+
+    add_color_code(new_doc)
     for paragraph in original_doc.paragraphs:
         annotate_paragraph(paragraph, flagged_clauses, new_doc)
     
@@ -49,6 +51,21 @@ def flag_clauses(contract_text, xls_clauses, acceptance_status):
         if re.search(re.escape(clause), contract_text, re.IGNORECASE):
             flagged_clauses[clause] = status
     return flagged_clauses
+
+def add_color_code(new_doc):
+    paragraph = new_doc.add_paragraph()
+
+    lines = ['FAR Acceptance Status Color Code', 'Green = OK', 'Turquoise = Conditional', 'Red = Remove']
+    colors = [WD_COLOR_INDEX.WHITE, WD_COLOR_INDEX.BRIGHT_GREEN, WD_COLOR_INDEX.TURQUOISE, WD_COLOR_INDEX.RED]
+
+    for line, color in zip(lines, colors):
+        run = paragraph.add_run(line)
+        if lines[0] == line: 
+            run.bold = True 
+            run.underline = True
+        run.font.highlight_color = color
+        run.add_break()
+
 
 # Function to annotate a paragraph based on flagged clauses and their acceptance status
 def annotate_paragraph(paragraph, flagged_clauses, new_doc):
