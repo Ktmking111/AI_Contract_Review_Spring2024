@@ -13,8 +13,20 @@ nltk.path.append("supplementary_files\\nltk_data")
 FAR_CLAUSE_MATRIX_PATH = "supplementary_files\\2023-03-20_FAR Matrix.xls"
 TNC_MATRIX_PATH = "supplementary_files\\Contract Ts&Cs Matrix.xlsm"
 
-@ui.page("/")
-def index():
+@ui.page("/subscanner")
+def subcontract_scanner():
+    ui.add_head_html("<link rel='stylesheet' href='/static/style.css'/>")
+    ui.html('<title>AI Contract Review</title>')
+    ui.colors(primary='#E87722', secondary='#e86100')
+    with ui.header(elevated=True).style('width: 100%; display: flex; justify-content: center;'):
+        with ui.element():
+            ui.label('Subcontractor Agreement Scanner').style('font-size: 22px; text-align: center')
+            with ui.element().style('width: 100%; display: flex; justify-content: center;'):
+                ui.label('Office of Sponsored Programs').style('font-size: 18px;')
+    ui.upload(multiple=True, label="Upload Subcontractor Agreements", auto_upload=True).props(add="accept='.docx,.pdf'")
+
+@ui.page("/contractscanner")
+def contract_scanner():
     ui.add_head_html("<link rel='stylesheet' href='/static/style.css'/>")
     ui.html('<title>AI Contract Review</title>')
     ui.colors(primary='#0b2341', secondary='#e86100')
@@ -23,8 +35,6 @@ def index():
             ui.label('AI Contract Review').style('font-size: 22px; text-align: center')
             with ui.element().style('width: 100%; display: flex; justify-content: center;'):
                 ui.label('Office of Sponsored Programs').style('font-size: 18px;')
-    # ui.title('AI Contract Scanner')
-
     ui.upload(multiple=True, label="Upload Contracts", auto_upload=True, on_upload=handle_upload).props(add="accept='.docx,.pdf'")
 
 
@@ -63,6 +73,22 @@ def write_binary_to_temp_file(name, binary):
     with open(file=filepath, mode="wb") as file:
         file.write(binary)
     return filepath
+
+@ui.page("/")
+def index():
+    ui.add_head_html("<link rel='stylesheet' href='/static/style.css'/>")
+    ui.label("Choose the feature you would like to access:").style("font-size: 30px;")
+    with ui.element().style("""
+                            display: flex;
+                            width: 100vw;
+                            justify-content: center;
+                            height: calc(100vh - 50px);
+                            align-items: center;
+                            position: absolute;
+                            top: 50px;
+                            left: 0;"""):
+        ui.link("AI Contract Scanner", contract_scanner).classes("page-button").style("background: #0b2341; margin-right: 50px;")
+        ui.link("Subcontractor Agreement Scanner", subcontract_scanner).classes("page-button").style("background: #E87722;")
 
 if __name__ in {"__main__", "__mp_main__"}:
     app.add_static_files("/static", "static")
