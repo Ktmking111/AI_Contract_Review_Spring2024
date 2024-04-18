@@ -22,13 +22,14 @@ def index():
 
 
 async def handle_upload(e):
-    clear_temp_files()
     name = e.name
     binary = e.content.read()
     upload_filepath = write_binary_to_temp_file(name, binary)
-    output_filepath = f"temp/{getFilenameStringNoExtension(name)}_scanned.docx"
+    downloads_path = os.path.join(os.environ['USERPROFILE'], 'Downloads')
+    output_filepath = os.path.join(downloads_path, f"{getFilenameStringNoExtension(name)}_scanned.docx")
     ui.notify("Scanning file...")
     await run.cpu_bound(scan_file, upload_filepath, output_filepath)
+    os.remove(upload_filepath)
     ui.notify("Downloading scan")
     ui.download(output_filepath)
 
@@ -55,15 +56,6 @@ def write_binary_to_temp_file(name, binary):
     with open(file=filepath, mode="wb") as file:
         file.write(binary)
     return filepath
-
-
-def clear_temp_files():
-    files = glob.glob('temp/*')
-    for f in files:
-        os.remove(f)
-
-#if __name__ == "__main__":
-    #clear_temp_files()
 
 if __name__ in {"__main__", "__mp_main__"}:
     app.add_static_files("/static", "static")
