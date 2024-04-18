@@ -5,6 +5,10 @@ from contract_to_txt import convert_to_txt
 from flag_FAR_clauses import annotate_contract
 from contract_to_txt import convert_to_txt, txt_to_docx
 from flag_problem_language import _flag_problem_language
+from nltk import data as nltk
+
+# Append the custom path to the NLTK data path
+nltk.path.append("supplementary_files\\nltk_data")
 
 FAR_CLAUSE_MATRIX_PATH = "supplementary_files\\2023-03-20_FAR Matrix.xls"
 TNC_MATRIX_PATH = "supplementary_files\\Contract Ts&Cs Matrix.xlsm"
@@ -21,9 +25,11 @@ async def handle_upload(e):
     name = e.name
     binary = e.content.read()
     upload_filepath = write_binary_to_temp_file(name, binary)
-    output_filepath = f"temp/{getFilenameStringNoExtension(name)}_scanned.docx"
+    downloads_path = os.path.join(os.environ['USERPROFILE'], 'Downloads')
+    output_filepath = os.path.join(downloads_path, f"{getFilenameStringNoExtension(name)}_scanned.docx")
     ui.notify("Scanning file...")
     await run.cpu_bound(scan_file, upload_filepath, output_filepath)
+    os.remove(upload_filepath)
     ui.notify("Downloading scan")
     ui.download(output_filepath)
 
@@ -51,16 +57,7 @@ def write_binary_to_temp_file(name, binary):
         file.write(binary)
     return filepath
 
-
-def clear_temp_files():
-    files = glob.glob('temp/*')
-    for f in files:
-        os.remove(f)
-
-if __name__ == "__main__":
-    clear_temp_files()
-
 if __name__ in {"__main__", "__mp_main__"}:
     app.add_static_files("/static", "static")
     app.add_static_files("/temp", "temp")
-    ui.run()
+    ui.run(native=True, reload=False)
