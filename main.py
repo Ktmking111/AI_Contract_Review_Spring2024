@@ -67,4 +67,4 @@ def write_binary_to_temp_file(name, binary):
 if __name__ in {"__main__", "__mp_main__"}:
     app.add_static_files("/static", "static")
     app.add_static_files("/temp", "temp")
-    ui.run(native=True, reload=False)
+    ui.run(reload=False, host="0.0.0.0")
