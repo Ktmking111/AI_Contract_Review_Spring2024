@@ -3,6 +3,7 @@ import tkinter
 from tkinter import filedialog
 from contract_to_txt import convert_to_txt, txt_to_docx
 from flag_problem_language import _flag_problem_language
+from classify_documents import classify_document
 from nltk import data as nltk
 from pathlib import Path
 
@@ -36,3 +37,5 @@ txt_to_docx(back_to_docx, file_to_highlight)
 annotate_contract(FAR_clause_matrix, file_to_highlight, save_path)
 
 print("Annotation complete. Output file: " + save_path)
+
+classify_document(contract_in)
