@@ -32,11 +32,14 @@ def flag_findings(txt_file):
                      b"Noncompliance material to financial statements noted? Yes",
                      b"Significant deficiencies identified? Yes",
                     ]
-    with open(txt_file) as f:
-        for i in findings_list:
-            s = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
-            if s.find(i) != -1:
-                return True
+    try:
+        with open(txt_file) as f:
+            for i in findings_list:
+                s = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
+                if s.find(i) != -1:
+                    return True
+    except:
+        return False
     return False
 
 

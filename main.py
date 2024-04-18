@@ -6,12 +6,15 @@ from flag_FAR_clauses import annotate_contract
 from contract_to_txt import convert_to_txt, txt_to_docx
 from flag_problem_language import _flag_problem_language
 from nltk import data as nltk
+import pdf_to_txt
 
 # Append the custom path to the NLTK data path
 nltk.path.append("supplementary_files\\nltk_data")
 
 FAR_CLAUSE_MATRIX_PATH = "supplementary_files\\2023-03-20_FAR Matrix.xls"
 TNC_MATRIX_PATH = "supplementary_files\\Contract Ts&Cs Matrix.xlsm"
+
+##############################################################################################################################
 
 @ui.page("/subscanner")
 def subcontract_scanner():
@@ -23,7 +26,23 @@ def subcontract_scanner():
             ui.label('Subcontractor Agreement Scanner').style('font-size: 22px; text-align: center')
             with ui.element().style('width: 100%; display: flex; justify-content: center;'):
                 ui.label('Office of Sponsored Programs').style('font-size: 18px;')
-    ui.upload(multiple=True, label="Upload Subcontractor Agreements", auto_upload=True).props(add="accept='.docx,.pdf'")
+    ui.upload(multiple=True, label="Upload Subcontractor Agreements", auto_upload=True, on_upload=handle_sub_upload).props(add="accept='.pdf'")
+
+def handle_sub_upload(e):
+    name = e.name
+    binary = e.content.read()
+    upload_filepath = write_binary_to_temp_file(name, binary)
+    text_file_name = pdf_to_txt.pdf_to_txt(upload_filepath)
+    found = pdf_to_txt.flag_findings(text_file_name)
+    if found:
+        ui.notify(name + " was flagged", type='negative')
+    else:
+        ui.notify(name + " was not flagged", type='positive')
+
+
+
+
+##############################################################################################################################
 
 @ui.page("/contractscanner")
 def contract_scanner():
@@ -32,13 +51,13 @@ def contract_scanner():
     ui.colors(primary='#0b2341', secondary='#e86100')
     with ui.header(elevated=True).style('width: 100%; display: flex; justify-content: center;'):
         with ui.element():
-            ui.label('AI Contract Review').style('font-size: 22px; text-align: center')
+            ui.label('AI Contract Scanner').style('font-size: 22px; text-align: center')
             with ui.element().style('width: 100%; display: flex; justify-content: center;'):
                 ui.label('Office of Sponsored Programs').style('font-size: 18px;')
-    ui.upload(multiple=True, label="Upload Contracts", auto_upload=True, on_upload=handle_upload).props(add="accept='.docx,.pdf'")
+    ui.upload(multiple=True, label="Upload Contracts", auto_upload=True, on_upload=handle_contract_upload).props(add="accept='.docx,.pdf'")
 
 
-async def handle_upload(e):
+async def handle_contract_upload(e):
     name = e.name
     binary = e.content.read()
     upload_filepath = write_binary_to_temp_file(name, binary)
@@ -73,6 +92,8 @@ def write_binary_to_temp_file(name, binary):
     with open(file=filepath, mode="wb") as file:
         file.write(binary)
     return filepath
+
+##########################################################################################
 
 @ui.page("/")
 def index():
