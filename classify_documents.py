@@ -2,7 +2,6 @@ import os
 from contract_to_txt import convert_to_txt
 from sklearn.model_selection import train_test_split
 from pathlib import Path
-from shutil import move
 
 # Define directories
 TEST_DATA_DIR = Path("supplementary_files/samples_test_set")
