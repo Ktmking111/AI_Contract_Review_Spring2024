@@ -12,6 +12,9 @@ FLAGGED_DIR = Path("supplementary_files/flagged_documents")
 # Function to check for flagged phrases
 def is_flagged(document):
     document_text = convert_to_txt(document)
+    if document_text is None:
+        # Handle the case where convert_to_txt returns None
+        return False
     flagged_phrases = ["POTENTIAL PROBLEMATIC LANGUAGE DETECTED"]
     if "highlight" in document_text:
         return True
@@ -38,13 +41,19 @@ FLAGGED_DIR.mkdir(exist_ok=True)
 def classify_document(document):
     try:
         document_path = TEST_DATA_DIR / document
-        document_text = convert_to_txt(document_path)
+        document_text = convert_to_txt(str(document_path))
         destination_dir = FLAGGED_DIR if is_flagged(document_text) else CLEAN_DIR
         destination_path = destination_dir / document
-        move(str(document_path), str(destination_path))
+        os.replace(str(document_path), str(destination_path))
+    except FileNotFoundError as fnf_error:
+        print(fnf_error)
+    except PermissionError as perm_error:
+        print(f"Permission error: {perm_error}")
+    except OSError as os_error:
+        print(f"OS error: {os_error}")
     except Exception as e:
-        print(f"An error occurred while classifying document {document}: {e}")
-
+        print(f"An unexpected error occurred while classifying document {document}: {e}")
+        
 # Classify each document in the test set
 for document in X_test:
     classify_document(document)
